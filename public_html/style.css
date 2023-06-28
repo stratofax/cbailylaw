@@ -1,0 +1,255 @@
+/* Common style css */
+:root {
+
+    /* color */
+    --color-primary: #177d89;
+    --color-secondary: #f2c833;
+    --color-black: #000000;
+    --color-black-1e: #1e1906;
+    --color-black-gray: #3f3f3f;
+    --color-white: #fff;
+    --color-line: #4597a1;
+
+    /* font size */
+    --h1: 50px;
+    --h2: ;
+    --h3: ;
+    --h4: ;
+    --h5: ;
+    --h6: ;
+    --body-text: 16px;
+
+    /* Font Family */
+    --font-primary: ;
+    --font-secondary: ;
+
+
+}
+
+html,
+body,
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+    font-family: serif;
+    font-size: var(--body-text);
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    box-shadow: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* button style */
+.cbailylaw__call-to-action_btn {
+    height: 54px;
+    width: 150px;
+    line-height: 54px;
+    display: inline-block;
+    background: var(--color-secondary);
+    border-radius: 50px;
+    text-transform: capitalize;
+    color: var(--color-black-1e);
+    text-align: center;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.cbailylaw__call-to-action_btn:hover {
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Common style css */
+
+/* Start hader style */
+#cbailylaw_header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.cbailylaw_header_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: auto;
+    padding: 25px 0;
+    border-bottom: 1px solid var(--color-line);
+}
+
+.cbailylaw__menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cbailylaw__menu ul li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.cbailylaw__menu ul li a {
+    text-transform: capitalize;
+    color: var(--color-white);
+}
+
+/* End of hader style */
+
+
+/* Start Hero style */
+.cbailylaw__hero-wrapper {
+    background: var(--color-primary);
+    overflow: hidden;
+}
+
+.cbailylaw__hero-inner {
+    min-height: 800px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.cbailylaw__hero-content {
+    width: 55%;
+    padding-right: 100px;
+}
+
+.cbailylaw__hero-content h1 {
+    font-size: var(--h1);
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    line-height: 60px;
+}
+
+.cbailylaw__hero-content p {
+    line-height: 30px;
+    font-size: var(--body-text);
+}
+
+.cbailylaw__hero-content h1,
+.cbailylaw__hero-content p {
+    color: var(--color-white);
+    margin-bottom: 40px;
+}
+
+.cbailylaw__hero-img {
+    width: 45%;
+    position: relative;
+    z-index: 1;
+}
+
+.cbailylaw__hero-img img {
+    height: 648px;
+    display: table;
+    margin: auto;
+    margin-bottom: -50px;
+
+}
+
+.cbailylaw__hero-img__bg-shape {
+    height: 680px;
+    width: 680px;
+    background: #2e8a95;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -44%);
+    z-index: -1;
+}
+
+.cbailylaw__hero-img__bg-shape::before {
+    position: absolute;
+    content: '';
+    height: 610px;
+    width: 610px;
+    background: #42959f;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cbailylaw__hero-img__bg-shape::after {
+    position: absolute;
+    content: '';
+    height: 540px;
+    width: 540px;
+    background: #519da7;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* End of Hero style */
+
+
+/* Start service style */
+.cbailylaw__service--inner {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0;
+}
+.cbailylaw__service--title__wrapper{
+    width: 40%;
+}
+.cbailylaw__service--card_wrapper{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.cbailylaw__service--card{
+    width: 44.8%;
+    background: var(--color-white);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.18);
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+.cbailylaw__service--card:first-child{
+    margin-left: 50px;
+}
+.cbailylaw__service--card:last-child{
+    margin-right: 50px;
+}
+
+/* End of service style */
