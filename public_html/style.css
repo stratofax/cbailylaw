@@ -1,9 +1,19 @@
 /* Common style css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Recoleta font */
+@font-face {
+    font-family: "Recoleta";
+    src: local("Recoleta"),
+        url("/assets/fonts/Recoleta-RegularDEMO.otf") format("opentype") tech(color-COLRv1), url("/assets/fonts/Recoleta-RegularDEMO.otf") format("opentype"), url("/assets/fonts/Recoleta-RegularDEMO.otf") format("woff");
+}
+
+
 :root {
 
     /* color */
-    --color-primary: #177d89;
-    --color-secondary: #f2c833;
+    --color-primary: #177D89;
+    --color-secondary: #F2CA2A;
     --color-black: #000000;
     --color-black-1e: #1e1906;
     --color-black-gray: #3f3f3f;
@@ -11,17 +21,22 @@
     --color-line: #4597a1;
 
     /* font size */
-    --h1: 50px;
-    --h2: ;
-    --h3: ;
-    --h4: ;
-    --h5: ;
-    --h6: ;
+    --h1: 80px;
+    --h2: 64px;
+    --h3: 34px;
+    --h4: 20px;
+    --h5: 18px;
+    --h6: 16px;
     --body-text: 16px;
+    --logo-text: 36px;
+    --menu-text: 16px;
+    --btn-text: 16px;
+    --hero-text: 20px;
 
     /* Font Family */
-    --font-primary: ;
-    --font-secondary: ;
+    --font-title: "Recoleta";
+    --font-body: 'Montserrat', sans-serif;
+    --font-btn: 'Poppins', sans-serif;
 
 
 }
@@ -33,7 +48,7 @@ body,
     padding: 0;
     line-height: 1;
     box-sizing: border-box;
-    font-family: serif;
+    font-family: var(--font-body);
     font-size: var(--body-text);
 }
 
@@ -42,6 +57,12 @@ ol {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-title);
 }
 
 h1,
@@ -79,8 +100,9 @@ img {
     color: var(--color-black-1e);
     text-align: center;
     transition: all 0.3s ease;
-    font-weight: 600;
-    font-size: 17px;
+    font-weight: 500;
+    font-size: var(--btn-text);
+    font-family: var(--font-btn);
 }
 
 .cbailylaw__call-to-action_btn:hover {
@@ -106,9 +128,19 @@ img {
     max-width: 1300px;
     margin: auto;
     padding: 25px 0;
+    height: 100px;
     border-bottom: 1px solid var(--color-line);
 }
 
+/* Logo */
+.cbailylaw__logo a {
+    font-family: var(--font-title);
+    font-size: var(--logo-text);
+    line-height: 1;
+    color: var(--color-white);
+}
+
+/* Navigation */
 .cbailylaw__menu ul {
     display: flex;
     align-items: center;
@@ -119,9 +151,36 @@ img {
     margin-right: 30px;
 }
 
+.cbailylaw__menu ul li {
+    position: relative;
+}
+
 .cbailylaw__menu ul li a {
     text-transform: capitalize;
     color: var(--color-white);
+    font-family: var(--font-btn);
+    font-size: var(--menu-text);
+    line-height: 1;
+}
+
+.cbailylaw__menu ul li::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    border-radius: 100px;
+    background: var(--color-white);
+    left: 0;
+    bottom: -10px;
+    transform: scale3d(0, 1, 1);
+    transform-origin: 100% 50%;
+    transition: transform 1s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.cbailylaw__menu ul li.cbailylaw__active::before,
+.cbailylaw__menu ul li:hover::before {
+    transform: scale3d(1, 1, 1);
+    transform-origin: 0 50%;
 }
 
 /* End of hader style */
@@ -134,7 +193,7 @@ img {
 }
 
 .cbailylaw__hero-inner {
-    min-height: 800px;
+    min-height: 900px;
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -153,18 +212,20 @@ img {
     font-size: var(--h1);
     margin-bottom: 30px;
     text-transform: capitalize;
-    line-height: 60px;
+    line-height: 1.1;
 }
 
 .cbailylaw__hero-content p {
-    line-height: 30px;
-    font-size: var(--body-text);
+    line-height: 34px;
+    font-size: var(--hero-text);
+    font-weight: 400;
+    font-family: var(--font-body);
+    margin-bottom: 40px;
 }
 
 .cbailylaw__hero-content h1,
 .cbailylaw__hero-content p {
     color: var(--color-white);
-    margin-bottom: 40px;
 }
 
 .cbailylaw__hero-img {
@@ -177,7 +238,7 @@ img {
     height: 648px;
     display: table;
     margin: auto;
-    margin-bottom: -50px;
+    margin-bottom: -150px;
 
 }
 
@@ -189,7 +250,7 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -44%);
+    transform: translate(-50%, -38%);
     z-index: -1;
 }
 
@@ -225,31 +286,124 @@ img {
 .cbailylaw__service--inner {
     max-width: 1300px;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
     padding: 100px 0;
 }
-.cbailylaw__service--title__wrapper{
-    width: 40%;
+
+.cbailylaw__service--title__wrapper {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 50px;
 }
-.cbailylaw__service--card_wrapper{
-    width: 60%;
+
+.cbailylaw__service--title__wrapper h2 {
+    font-size: var(--h2);
+    font-family: var(--font-title);
+    margin-bottom: 20px;
+}
+
+.cbailylaw__service--title__wrapper p {
+    line-height: 25px;
+}
+
+.cbailylaw__service--card_wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
-.cbailylaw__service--card{
-    width: 44.8%;
-    background: var(--color-white);
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.18);
-    padding: 30px 20px;
-    border-radius: 10px;
+
+.cbailylaw__service--card {
+    width: 23.2%;
+    position: relative;
+    min-height: 380px;
+    padding: 30px 15px;
 }
-.cbailylaw__service--card:first-child{
-    margin-left: 50px;
+
+.cbailylaw__service--card:not(:first-child)::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: #D9D9D9;
+    left: -15px;
 }
-.cbailylaw__service--card:last-child{
-    margin-right: 50px;
+
+.cbailylaw__service--card img {
+    mix-blend-mode: screen;
+    margin-bottom: 30px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.cbailylaw__service--card h3 {
+    font-size: var(--h4);
+    font-family: var(--body-text);
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.cbailylaw__service--card p span,
+.cbailylaw__service--card p {
+    font: 400 var(--body-text)/30px var(--font-body);
+}
+
+.cbailylaw__service--card p span {
+    display: none;
+}
+
+.cbailylaw__service--card p span:target {
+    display: inline-block;
+}
+
+.cbailylaw__see-more {
+    color: var(--color-black-gray);
+    font-size: var(--body-text);
+    font-family: var(--font-body);
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+#cbailylaw__see-more:hover {
+    color: var(--color-primary);
 }
 
 /* End of service style */
+
+
+/* About style */
+.cbailylaw__about{
+    background: var(--color-primary);
+    position: relative;
+    z-index: 1;
+}
+.cbailylaw__about::before{
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: var(--color-secondary);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.cbailylaw__about-inner {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cbailylaw__about-content,
+.cbailylaw__about-img{
+    width: 50%;
+    flex: 1 0 50%;
+}
+.cbailylaw__about-img{}
+.cbailylaw__about-content{}
+
+/* End of about style */
