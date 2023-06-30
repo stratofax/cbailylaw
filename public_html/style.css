@@ -51,6 +51,7 @@ body,
     box-sizing: border-box;
     font-family: var(--font-body);
     font-size: var(--body-text);
+    scroll-behavior: smooth;
 }
 
 ul,
@@ -338,6 +339,11 @@ img {
     height: 100px;
     width: 100px;
     object-fit: cover;
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+.cbailylaw__service--card:hover img{
+    transform: scale(1.2);
 }
 
 .cbailylaw__service--card h3 {
@@ -412,7 +418,7 @@ img {
 .cbailylaw__about-img img {
     margin-top: -100px;
     position: relative;
-    bottom: -22px;
+    bottom: -20px;
     height: 785px;
 }
 
@@ -446,6 +452,219 @@ img {
 /* End of about style */
 
 
+/* Start Testimonial style */
+.cbailylaw__testimonial-inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.cbailylaw__testimonial-titile__wrapper {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.cbailylaw__testimonial-titile__wrapper h2 {
+    font: 400 var(--h2)/1 var(--font-title);
+    margin-bottom: 30px;
+}
+
+.cbailylaw__testimonial-titile__wrapper p {
+    font: 400 var(--hero-text)/1 var(--font-body);
+    color: var(--color-black-gray);
+}
+
+.cbailylaw__testimonial-wrapper {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.cbailylaw__testimonial-wrapper h3 {
+    font: 600 var(--h3)/1 var(--font-body);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.cbailylaw__testimonial-grids {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+}
+
+.cbailylaw__testimonial-grid-full p,
+.cbailylaw__testimonial-grid p {
+    font: 300 20px/34px var(--font-body);
+    color: var(--color-black);
+    min-height: 170px;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+}
+
+.cbailylaw__testimonial-grid-full a,
+.cbailylaw__testimonial-grid span {
+    display: inline-block;
+    color: var(--color-black);
+    font: 600 20px/30px var(--font-body);
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+
+.cbailylaw__testimonial-grid-full a {
+    margin: 0;
+    display: initial;
+}
+
+.cbailylaw__testimonial {
+    position: relative;
+    z-index: 1;
+}
+
+.cbailylaw__testimonial::before {
+    position: absolute;
+    content: url(assets/imgs/t-bg.png);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35.5%);
+    z-index: -1;
+}
+
+/* End of testimonial style */
+
+
+/* Contact style */
+
+.cbailylaw__contact {
+    background: var(--color-primary);
+    padding: 60px 0;
+}
+
+.cbailylaw__contact-inner {
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.cbailylaw__contact-info {
+    padding-right: 100px;
+}
+
+.cbailylaw__contact-info h2 {
+    font: 400 var(--h2)/1.1 var(--font-title);
+    color: var(--color-white);
+    margin-bottom: 30px;
+}
+
+.cbailylaw__contact-info p {
+    font: 400 20px/34px var(--font-body);
+    color: var(--color-white);
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+    padding-right: 100px;
+}
+
+.cbailylaw__contact-info ul {
+    border-top: 1px solid #D9D9D9;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.cbailylaw__contact-info ul li:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.cbailylaw__contact-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+.cbailylaw__contact-info ul li img {
+    margin-right: 20px;
+}
+
+.cbailylaw__contact-info ul li span {
+    font: 400 20px/1 var(--font-body);
+    color: var(--color-white);
+    letter-spacing: 0.8px;
+}
+
+.cbailylaw__contact-form {
+    background: #FFF;
+    box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.10);
+    padding: 100px 80px;
+}
+
+.cbailylaw__contact-form .cbailylaw__input textarea,
+.cbailylaw__contact-form .cbailylaw__input input {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.cbailylaw__contact-form .cbailylaw__input textarea:focus,
+.cbailylaw__contact-form .cbailylaw__input input:focus {
+    outline: none;
+    border-bottom: 1px solid var(--color-primary);
+}
+
+.cbailylaw__contact-form .cbailylaw__input:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.cbailylaw__contact-form .cbailylaw__input::-webkit-input-placeholder {
+    color: #9F9F9F;
+    font-size: 20px;
+    font-family: var(--font-body);
+    letter-spacing: 0.8px;
+}
+
+.cbailylaw__contact-form .cbailylaw__input::-moz-placeholder {
+    color: #9F9F9F;
+    font-size: 20px;
+    font-family: var(--font-body);
+    letter-spacing: 0.8px;
+}
+
+.cbailylaw__contact-form .cbailylaw__input:-ms-input-placeholder {
+    color: #9F9F9F;
+    font-size: 20px;
+    font-family: var(--font-body);
+    letter-spacing: 0.8px;
+}
+
+.cbailylaw__contact-form .cbailylaw__input:-moz-placeholder {
+    color: #9F9F9F;
+    font-size: 20px;
+    font-family: var(--font-body);
+    letter-spacing: 0.8px;
+}
+
+.cbailylaw__contact-form button {
+    height: 54px;
+    background: var(--color-secondary);
+    color: var(--color-black);
+    font-size: var(--body-text);
+    font-family: var(--font-body);
+    font-weight: 500;
+    border: none;
+    border-radius: 100px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.cbailylaw__contact-form button:hover{
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* End of Contact style */
+
+
 /* Footer style */
 .cbailylaw__footer {
     background: #F0EFF4;
@@ -477,7 +696,8 @@ img {
 .cbailylaw__footer-menu ul li a {
     color: var(--color-black-gray);
 }
-.cbailylaw__footer-menu ul li:hover a{
+
+.cbailylaw__footer-menu ul li:hover a {
     color: var(--color-primary);
 }
 
@@ -498,20 +718,23 @@ img {
     font-size: 24px;
     color: #908f92;
 }
-.cbailylaw__footer-solial_links ul li:hover a{
+
+.cbailylaw__footer-solial_links ul li:hover a {
     color: var(--color-primary);
 }
 
-.cbailylaw__footer-bottom{
+.cbailylaw__footer-bottom {
     padding: 30px 0;
     text-align: center;
 }
-.cbailylaw__footer-bottom p{
+
+.cbailylaw__footer-bottom p {
     font-size: var(--body-text);
     font-family: var(--font-btn);
     color: var(--color-black-gray);
 }
-.cbailylaw__footer-bottom p span{
+
+.cbailylaw__footer-bottom p span {
     font-size: 24px;
 }
 
