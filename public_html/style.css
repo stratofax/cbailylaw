@@ -342,7 +342,8 @@ img {
     transform: scale(1);
     transition: all 0.3s ease;
 }
-.cbailylaw__service--card:hover img{
+
+.cbailylaw__service--card:hover img {
     transform: scale(1.2);
 }
 
@@ -499,9 +500,14 @@ img {
     color: var(--color-black);
     min-height: 170px;
     letter-spacing: 0.8px;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
+.cbailylaw__testimonial-grid.attribution {
+    text-align: right;
+}
+
+/* this style is a problem! Don't use span here*/
 .cbailylaw__testimonial-grid-full a,
 .cbailylaw__testimonial-grid span {
     display: inline-block;
@@ -564,7 +570,7 @@ img {
     font: 400 20px/34px var(--font-body);
     color: var(--color-white);
     letter-spacing: 0.8px;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     padding-right: 100px;
 }
 
@@ -658,7 +664,8 @@ img {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.cbailylaw__contact-form button:hover{
+
+.cbailylaw__contact-form button:hover {
     box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
 }
 
