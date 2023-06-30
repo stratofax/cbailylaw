@@ -570,7 +570,7 @@ img {
     font: 400 20px/34px var(--font-body);
     color: var(--color-white);
     letter-spacing: 0.8px;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     padding-right: 100px;
 }
 
