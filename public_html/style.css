@@ -12,17 +12,18 @@
 :root {
 
     /* color */
-    --color-primary: #177D89;
+    --color-primary: #177e89;
+    /* --color-primary: #177D89; */
     --color-secondary: #F2CA2A;
     --color-black: #000000;
     --color-black-1e: #1e1906;
     --color-black-gray: #3f3f3f;
-    --color-white: #fff;
+    --color-white: #F0EFF4;
     --color-line: #4597a1;
 
     /* font size */
-    --h1: 80px;
-    --h2: 64px;
+    --h1: 70px;
+    --h2: 62px;
     --h3: 34px;
     --h4: 20px;
     --h5: 18px;
@@ -31,7 +32,7 @@
     --logo-text: 36px;
     --menu-text: 16px;
     --btn-text: 16px;
-    --hero-text: 20px;
+    --hero-text: 18px;
 
     /* Font Family */
     --font-title: "Recoleta";
@@ -133,6 +134,7 @@ img {
 }
 
 /* Logo */
+.cbailylaw__footer-logo a,
 .cbailylaw__logo a {
     font-family: var(--font-title);
     font-size: var(--logo-text);
@@ -155,6 +157,7 @@ img {
     position: relative;
 }
 
+.cbailylaw__footer-menu ul li a,
 .cbailylaw__menu ul li a {
     text-transform: capitalize;
     color: var(--color-white);
@@ -212,11 +215,12 @@ img {
     font-size: var(--h1);
     margin-bottom: 30px;
     text-transform: capitalize;
-    line-height: 1.1;
+    line-height: 1.15;
+    font-weight: normal;
 }
 
 .cbailylaw__hero-content p {
-    line-height: 34px;
+    line-height: 28px;
     font-size: var(--hero-text);
     font-weight: 400;
     font-family: var(--font-body);
@@ -286,7 +290,7 @@ img {
 .cbailylaw__service--inner {
     max-width: 1300px;
     margin: auto;
-    padding: 100px 0;
+    padding: 100px 0 200px;
 }
 
 .cbailylaw__service--title__wrapper {
@@ -363,7 +367,6 @@ img {
     font-weight: 600;
     line-height: 34px;
     letter-spacing: 0.8px;
-    text-transform: capitalize;
     text-decoration: underline;
     margin-left: 5px;
 }
@@ -376,12 +379,13 @@ img {
 
 
 /* About style */
-.cbailylaw__about{
+.cbailylaw__about {
     background: var(--color-primary);
     position: relative;
     z-index: 1;
 }
-.cbailylaw__about::before{
+
+.cbailylaw__about::before {
     position: absolute;
     content: '';
     width: 50%;
@@ -391,6 +395,7 @@ img {
     left: 0;
     z-index: -1;
 }
+
 .cbailylaw__about-inner {
     max-width: 1300px;
     margin: auto;
@@ -399,11 +404,115 @@ img {
 }
 
 .cbailylaw__about-content,
-.cbailylaw__about-img{
+.cbailylaw__about-img {
     width: 50%;
     flex: 1 0 50%;
 }
-.cbailylaw__about-img{}
-.cbailylaw__about-content{}
+
+.cbailylaw__about-img img {
+    margin-top: -100px;
+    position: relative;
+    bottom: -22px;
+    height: 785px;
+}
+
+.cbailylaw__about-content {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cbailylaw__about-content h2 {
+    font-size: var(--h2);
+    font-family: var(--font-title);
+    margin-bottom: 40px;
+    color: var(--color-white);
+}
+
+.cbailylaw__about-content p {
+    color: var(--color-white);
+    font-family: var(--font-body);
+    line-height: 34px;
+    font-size: 20px;
+}
+
+.cbailylaw__about-content a {
+    display: inline-block;
+    width: 64px;
+    margin-top: 30px;
+}
 
 /* End of about style */
+
+
+/* Footer style */
+.cbailylaw__footer {
+    background: #F0EFF4;
+}
+
+.cbailylaw__footer-inner {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.cbailylaw__footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.cbailylaw__footer-logo a {
+    color: #1C2E6E;
+}
+
+.cbailylaw__footer-menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.cbailylaw__footer-menu ul li a {
+    color: var(--color-black-gray);
+}
+.cbailylaw__footer-menu ul li:hover a{
+    color: var(--color-primary);
+}
+
+.cbailylaw__footer-menu ul li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.cbailylaw__footer-solial_links ul {
+    display: flex;
+    align-items: center;
+}
+
+.cbailylaw__footer-solial_links ul li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.cbailylaw__footer-solial_links ul li a {
+    font-size: 24px;
+    color: #908f92;
+}
+.cbailylaw__footer-solial_links ul li:hover a{
+    color: var(--color-primary);
+}
+
+.cbailylaw__footer-bottom{
+    padding: 30px 0;
+    text-align: center;
+}
+.cbailylaw__footer-bottom p{
+    font-size: var(--body-text);
+    font-family: var(--font-btn);
+    color: var(--color-black-gray);
+}
+.cbailylaw__footer-bottom p span{
+    font-size: 24px;
+}
+
+/* End of footer style */
