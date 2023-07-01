@@ -248,8 +248,8 @@ img {
 }
 
 .cbailylaw__hero-img__bg-shape {
-    height: 680px;
-    width: 680px;
+    height: 670px;
+    width: 670px;
     background: #2e8a95;
     border-radius: 100%;
     position: absolute;
@@ -262,8 +262,8 @@ img {
 .cbailylaw__hero-img__bg-shape::before {
     position: absolute;
     content: '';
-    height: 610px;
-    width: 610px;
+    height: 88%;
+    width: 88%;
     background: #42959f;
     border-radius: 100%;
     top: 50%;
@@ -274,8 +274,8 @@ img {
 .cbailylaw__hero-img__bg-shape::after {
     position: absolute;
     content: '';
-    height: 540px;
-    width: 540px;
+    height: 76%;
+    width: 76%;
     background: #519da7;
     border-radius: 100%;
     top: 50%;
@@ -342,7 +342,8 @@ img {
     transform: scale(1);
     transition: all 0.3s ease;
 }
-.cbailylaw__service--card:hover img{
+
+.cbailylaw__service--card:hover img {
     transform: scale(1.2);
 }
 
@@ -362,9 +363,10 @@ img {
     display: none;
 }
 
+/*
 .cbailylaw__service--card p span:target {
     display: inline-block;
-}
+} */
 
 .cbailylaw__see-more {
     color: var(--color-black-gray);
@@ -597,6 +599,9 @@ img {
     background: #FFF;
     box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.10);
     padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .cbailylaw__contact-form .cbailylaw__input textarea,
@@ -658,7 +663,8 @@ img {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.cbailylaw__contact-form button:hover{
+
+.cbailylaw__contact-form button:hover {
     box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
 }
 
