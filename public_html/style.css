@@ -187,7 +187,7 @@ img {
     transform-origin: 0 50%;
 }
 
-.cbailylaw__mobile-menu__toggler{
+.cbailylaw__mobile-menu__toggler {
     height: 35px;
     width: 35px;
     background: var(--color-secondary);
@@ -200,7 +200,7 @@ img {
 }
 
 @media screen and (min-width:992px) {
-    .cbailylaw__mobile-menu__toggler{
+    .cbailylaw__mobile-menu__toggler {
         display: none;
     }
 }
@@ -352,13 +352,14 @@ img {
 }
 
 .cbailylaw__service--card img {
-    mix-blend-mode: screen;
     margin-bottom: 30px;
     height: 100px;
     width: 100px;
     object-fit: cover;
     transform: scale(1);
     transition: all 0.3s ease;
+    mix-blend-mode: multiply;
+    filter: contrast(1);
 }
 
 .cbailylaw__service--card:hover img {
