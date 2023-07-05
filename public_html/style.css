@@ -111,6 +111,7 @@ img {
     box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
 }
 
+
 /* Common style css */
 
 /* Start hader style */
@@ -187,6 +188,12 @@ img {
     transform-origin: 0 50%;
 }
 
+@media screen and (min-width:992px) {
+    .cbailylaw__mobile-menu__toggler {
+        display: none;
+    }
+}
+
 /* End of hader style */
 
 
@@ -244,43 +251,41 @@ img {
     display: table;
     margin: auto;
     margin-bottom: -150px;
+}
 
+.cbailylaw__hero-img__bg-shape,
+.cbailylaw__hero-img__bg-shape::before,
+.cbailylaw__hero-img__bg-shape::after {
+    position: absolute;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
 }
 
 .cbailylaw__hero-img__bg-shape {
     height: 680px;
     width: 680px;
     background: #2e8a95;
-    border-radius: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -38%);
     z-index: -1;
 }
 
-.cbailylaw__hero-img__bg-shape::before {
-    position: absolute;
+.cbailylaw__hero-img__bg-shape::before,
+.cbailylaw__hero-img__bg-shape::after {
     content: '';
-    height: 610px;
-    width: 610px;
-    background: #42959f;
-    border-radius: 100%;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
 }
 
+.cbailylaw__hero-img__bg-shape::before {
+    height: 88%;
+    width: 88%;
+    background: #42959f;
+}
+
 .cbailylaw__hero-img__bg-shape::after {
-    position: absolute;
-    content: '';
-    height: 540px;
-    width: 540px;
+    height: 76%;
+    width: 76%;
     background: #519da7;
-    border-radius: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 
@@ -570,7 +575,6 @@ img {
     font: 400 20px/34px var(--font-body);
     color: var(--color-white);
     letter-spacing: 0.8px;
-    /* text-transform: capitalize; */
     padding-right: 100px;
 }
 
@@ -743,6 +747,11 @@ img {
 
 .cbailylaw__footer-bottom p span {
     font-size: 24px;
+}
+
+.footer__info {
+    line-height: 22px;
+    margin-bottom: 15px;
 }
 
 /* End of footer style */
