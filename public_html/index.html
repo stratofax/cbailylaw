@@ -7,6 +7,7 @@
     <title>C Baily Law, LLC</title>
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
@@ -35,6 +36,12 @@
                 <a href="#contact" class="cbailylaw__call-to-action_btn">Contact us</a>
             </div>
             <!-- end of call to action -->
+
+            <!-- Mobile menu toggler -->
+            <div class="cbailylaw__mobile-menu__toggler">
+                <i class="fa fa-bars"></i>
+            </div>
+            <!-- end of Mobile menu toggler -->
         </div>
     </header>
     <!-- End of header section -->
@@ -71,7 +78,7 @@
 
 
         <!-- Start service Section -->
-        <section id="services" class="cbailylaw__service">
+        <section id="services" class="cbailylaw__service" style="display: none;">
             <div class="cbailylaw__service--inner">
                 <!-- service titile -->
                 <div class="cbailylaw__service--title__wrapper">
@@ -158,7 +165,7 @@
 
 
         <!-- Start About Section -->
-        <section id="about-us" class="cbailylaw__about">
+        <section id="about-us" class="cbailylaw__about" style="display: none;">
             <div class="cbailylaw__about-inner">
                 <!-- About image -->
                 <div class="cbailylaw__about-img">
@@ -187,7 +194,7 @@
 
 
         <!-- Testimonial Section -->
-        <section class="cbailylaw__testimonial">
+        <section class="cbailylaw__testimonial" style="display: none;">
             <div class="cbailylaw__testimonial-inner">
                 <!-- Testimonial titile wrapper -->
                 <div class="cbailylaw__testimonial-titile__wrapper">
@@ -340,7 +347,7 @@
                 <!-- End of footer top -->
                 <!-- Footer bottom -->
                 <div class="cbailylaw__footer-bottom">
-                    <p>Thank you for visiting the website of C Baily Law LLC. <br />
+                    <p class="footer__info">Thank you for visiting the website of C Baily Law LLC. <br />
                         Information offered on the website is intended for <br />
                         informational purposes only and should not <br />
                         be considered legal advice.<br /></p>
@@ -353,6 +360,9 @@
 
     </main>
     <!-- End main content -->
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

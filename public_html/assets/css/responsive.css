@@ -1,0 +1,373 @@
+@media screen and (max-width:1366px) {
+
+    .cbailylaw_header_inner,
+    .cbailylaw__hero-inner,
+    .cbailylaw__contact-inner,
+    .cbailylaw__footer-inner {
+        padding: 0 50px;
+    }
+
+    .cbailylaw__contact-info p {
+        padding-right: 50px;
+    }
+
+}
+
+@media screen and (max-width:1300px) {
+    .cbailylaw__hero-img__bg-shape {
+        height: 600px;
+        width: 600px;
+    }
+
+    .cbailylaw__hero-content h1 {
+        font-size: 50px;
+        line-height: 65px;
+    }
+}
+
+@media screen and (max-width:1220px) {
+    .cbailylaw__hero-img__bg-shape {
+        height: 550px;
+        width: 550px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    h2 {
+        font-size: 48px !important;
+    }
+
+    .cbailylaw__contact-info p {
+        padding-right: 0;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .cbailylaw__contact-info {
+        padding-right: 50px;
+    }
+
+    .cbailylaw__contact-info ul {
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+
+    .cbailylaw__contact-info ul li span {
+        line-height: 1.4;
+    }
+
+    .cbailylaw__contact-form {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width:1176px) {
+    .cbailylaw__hero-content h1 {
+        font-size: 48px;
+        line-height: 50px;
+    }
+
+    .cbailylaw__hero-img img {
+        margin-bottom: 0;
+    }
+
+    .cbailylaw__hero-content {
+        padding-right: 50px;
+    }
+
+    .cbailylaw__hero-content,
+    .cbailylaw__hero-img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .cbailylaw_header_inner,
+    .cbailylaw__hero-inner,
+    .cbailylaw__contact-inner,
+    .cbailylaw__footer-inner {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+
+    .cbailylaw__hero-inner {
+        padding-top: 120px;
+    }
+
+    .cbailylaw__hero-content,
+    .cbailylaw__hero-img {
+        width: 100%;
+    }
+
+    .cbailylaw__hero-content {
+        order: 2;
+        margin-top: 80px;
+    }
+
+    .cbailylaw__hero-img {
+        order: 1;
+    }
+
+    .cbailylaw__hero-content {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .cbailylaw__hero-img img {
+        height: 470px;
+        margin-bottom: -50px;
+    }
+
+    .cbailylaw__hero-img__bg-shape {
+        height: 440px;
+        width: 440px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .cbailylaw_header_inner {
+        height: 80px;
+    }
+
+    .cbailylaw__mobile-menu__toggler {
+        height: 32px;
+        width: 32px;
+        font-size: 20px;
+        background: var(--color-secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+
+    nav.cbailylaw__menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #12727c;
+        padding: 30px;
+        width: 100%;
+        display: none;
+    }
+
+    .cbailylaw__menu ul {
+        display: block;
+    }
+
+    .cbailylaw__menu ul li:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .cbailylaw__call-to-action {
+        display: none;
+    }
+}
+
+@media screen and (max-width:880px) {
+
+    .cbailylaw_header_inner,
+    .cbailylaw__hero-inner,
+    .cbailylaw__contact-inner,
+    .cbailylaw__footer-inner {
+        padding: 0 20px;
+    }
+
+    nav.cbailylaw__menu {
+        padding: 30px 20px !important;
+    }
+
+    .cbailylaw__hero-inner {
+        padding-top: 120px;
+    }
+
+    .cbailylaw__contact-form {
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 38px !important;
+    }
+
+    .cbailylaw__contact-info h2 {
+        margin-bottom: 20px;
+    }
+
+    .cbailylaw__contact-info p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .cbailylaw__contact-info ul li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .cbailylaw__contact-info ul li img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+
+    .cbailylaw__contact-info ul li span {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width:870px) {
+    .cbailylaw__hero-content h1 {
+        font-size: 44px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width:801px) {
+    .cbailylaw__hero-content h1 {
+        padding: 0 100px;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .cbailylaw__footer-top {
+        display: block;
+    }
+
+    .cbailylaw__footer-logo {
+        text-align: center;
+    }
+
+    .cbailylaw__footer-logo,
+    .cbailylaw__footer-menu ul {
+        margin-bottom: 30px;
+    }
+
+    .cbailylaw__footer-solial_links ul,
+    .cbailylaw__footer-menu ul {
+        justify-content: center;
+    }
+
+    .cbailylaw__contact-inner {
+        grid-template-columns: 100%;
+        gap: 30px 0;
+    }
+
+    .cbailylaw__contact-info {
+        padding-right: 0;
+    }
+
+    .cbailylaw__footer-logo a,
+    .cbailylaw__logo a {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width:673px) {
+    .cbailylaw__hero-content h1 {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .cbailylaw_header_inner,
+    .cbailylaw__hero-inner,
+    .cbailylaw__contact-inner,
+    .cbailylaw__footer-inner {
+        padding: 0 15px;
+    }
+
+    nav.cbailylaw__menu {
+        padding: 30px 15px !important;
+    }
+
+    .cbailylaw__hero-inner {
+        padding-top: 120px;
+    }
+
+    .cbailylaw__contact-form {
+        padding: 20px;
+    }
+
+    .cbailylaw__footer-top {
+        padding: 30px 0;
+    }
+
+    .cbailylaw__footer-logo a,
+    .cbailylaw__logo a {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width:562px) {
+    .cbailylaw__hero-content h1 {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:499px) {
+    .cbailylaw__hero-content h1 {
+        font-size: 40px;
+        line-height: 54px;
+    }
+
+    .cbailylaw__hero-content p {
+        font-size: 16px;
+    }
+
+    .cbailylaw__hero-img img {
+        height: 350px;
+    }
+
+    .cbailylaw__hero-img__bg-shape {
+        height: 350px;
+        width: 350px;
+    }
+
+    .footer__info{
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width:423px) {
+    .cbailylaw__hero-content h1 {
+        font-size: 38px;
+    }
+    h2{
+        font-size: 33px !important;
+    }
+}
+
+@media screen and (max-width:375px) {
+
+    .cbailylaw__footer-logo a,
+    .cbailylaw__logo a {
+        font-size: 25px;
+    }
+
+    .cbailylaw__footer-menu ul li:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    .cbailylaw__footer-logo,
+    .cbailylaw__footer-menu ul {
+        margin-bottom: 15px;
+    }
+
+    .cbailylaw__hero-content h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    .cbailylaw__footer-bottom p,
+    .cbailylaw__footer-menu ul li a {
+        font-size: 14px;
+    }
+}
