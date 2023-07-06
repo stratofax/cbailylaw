@@ -409,25 +409,26 @@ img {
 .cbailylaw__about-inner {
     max-width: 1300px;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
-.cbailylaw__about-content,
 .cbailylaw__about-img {
-    width: 50%;
-    flex: 1 0 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .cbailylaw__about-img img {
+    width: 100%;
     margin-top: -100px;
     position: relative;
-    bottom: -20px;
+    bottom: -15px;
     height: 785px;
+    left: -30px;
 }
 
 .cbailylaw__about-content {
-    padding: 100px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
