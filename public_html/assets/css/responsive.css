@@ -7,8 +7,16 @@
         padding: 0 50px;
     }
 
+    .cbailylaw__service--inner {
+        padding: 50px 50px 150px;
+    }
+
     .cbailylaw__contact-info p {
         padding-right: 50px;
+    }
+
+    .cbailylaw__about-img img {
+        left: -18px;
     }
 
 }
@@ -29,6 +37,13 @@
     .cbailylaw__hero-img__bg-shape {
         height: 550px;
         width: 550px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .cbailylaw__about-img img {
+        left: 0px;
+        bottom: -50px;
     }
 }
 
@@ -58,6 +73,10 @@
 
     .cbailylaw__contact-form {
         padding: 50px;
+    }
+
+    .cbailylaw__about-img img {
+        bottom: -22px;
     }
 }
 
@@ -89,6 +108,36 @@
     .cbailylaw__footer-inner {
         padding: 0 30px;
     }
+
+    .cbailylaw__service--inner {
+        padding: 50px 30px 100px;
+    }
+
+    .cbailylaw__service--card_wrapper {
+        grid-template-columns: 50% 50%;
+    }
+
+    .cbailylaw__service--card {
+        min-height: auto;
+        padding: 0 15px;
+    }
+
+    .cbailylaw__service--card:nth-child(2n + 1)::before {
+        display: none;
+    }
+
+    /* about */
+    .cbailylaw__about-img img {
+        bottom: 0;
+        margin-top: 0;
+        height: auto;
+    }
+
+    .cbailylaw__about-content p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
 }
 
 @media screen and (max-width:1023px) {
@@ -165,6 +214,41 @@
     .cbailylaw__call-to-action {
         display: none;
     }
+
+    /* about */
+    .cbailylaw__about-inner {
+        grid-template-columns: 100%;
+        padding: 50px;
+    }
+
+    .cbailylaw__about-img img {
+        width: inherit;
+        height: 600px;
+    }
+
+    .cbailylaw__about-content {
+        text-align: center;
+    }
+
+    .cbailylaw__about-content h2 br {
+        display: none;
+    }
+
+    .cbailylaw__about-content h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .cbailylaw__about-content a {
+        display: inline-block;
+        margin: 30px auto 0;
+    }
+
+    .cbailylaw__about-content {
+        padding: 0;
+    }
+
+
 }
 
 @media screen and (max-width:880px) {
@@ -174,6 +258,10 @@
     .cbailylaw__contact-inner,
     .cbailylaw__footer-inner {
         padding: 0 20px;
+    }
+
+    .cbailylaw__service--inner {
+        padding: 35px 20px;
     }
 
     nav.cbailylaw__menu {
@@ -264,11 +352,38 @@
         font-size: 30px;
     }
 
+    /* service */
+    .cbailylaw__service--title__wrapper {
+        margin-bottom: 30px;
+    }
+
+    .cbailylaw__service--card_wrapper {
+        grid-template-columns: 100%;
+    }
+
+    .cbailylaw__service--card::before {
+        display: none;
+    }
+
+    .cbailylaw__service--card {
+        text-align: center;
+        padding: 0;
+    }
+
+    .cbailylaw__service--card h3 {
+        margin-bottom: 15px;
+    }
+
 }
 
 @media screen and (max-width:673px) {
     .cbailylaw__hero-content h1 {
         padding: 0 50px;
+    }
+
+    /* about */
+    .cbailylaw__about-img img {
+        height: 450px;
     }
 }
 
@@ -279,6 +394,18 @@
     .cbailylaw__contact-inner,
     .cbailylaw__footer-inner {
         padding: 0 15px;
+    }
+
+    h2 {
+        font-size: 30px !important;
+    }
+
+    .cbailylaw__service--card img {
+        margin-bottom: 20px;
+    }
+
+    .cbailylaw__service--inner {
+        padding: 30px 15px;
     }
 
     nav.cbailylaw__menu {
@@ -300,6 +427,15 @@
     .cbailylaw__footer-logo a,
     .cbailylaw__logo a {
         font-size: 28px;
+    }
+
+    /* about */
+    .cbailylaw__about::before {
+        display: none;
+    }
+
+    .cbailylaw__about-inner {
+        padding: 50px 20px;
     }
 }
 
@@ -328,8 +464,17 @@
         width: 350px;
     }
 
-    .footer__info{
+    .footer__info {
         font-size: 14px !important;
+    }
+
+    .cbailylaw__about-img img {
+        height: inherit;
+    }
+
+    .cbailylaw__about-content p {
+        font-size: 15px;
+        line-height: 25px;
     }
 }
 
@@ -337,8 +482,9 @@
     .cbailylaw__hero-content h1 {
         font-size: 38px;
     }
-    h2{
-        font-size: 33px !important;
+
+    h2 {
+        font-size: 24px !important;
     }
 }
 
