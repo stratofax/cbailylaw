@@ -156,9 +156,6 @@ img {
     font-size: 28px;
 }
 
-.sticky__header .cbailylaw__menu {
-    width: 68%;
-}
 
 @keyframes stickyHead {
     0% {
@@ -173,18 +170,23 @@ img {
 }
 
 .cbailylaw_header_inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
     max-width: 1300px;
     margin: auto;
+    display: grid;
+    grid-template-columns: 30% 55% 15%;
+    align-content: center;
     padding: 25px 0;
     height: 100px;
     border-bottom: 1px solid var(--color-line);
 }
 
 /* Logo */
+.cbailylaw__menu,
+.cbailylaw__logo {
+    display: flex;
+    align-items: center;
+}
+
 .cbailylaw__footer-logo a,
 .cbailylaw__logo a {
     font-family: var(--font-title);
@@ -194,10 +196,10 @@ img {
 }
 
 /* Navigation */
-.cbailylaw__menu {
-    width: 60%;
-}
 
+.cbailylaw__menu{
+    justify-content: flex-end;
+}
 .cbailylaw__menu ul {
     display: flex;
     align-items: center;
@@ -245,6 +247,11 @@ img {
     .cbailylaw__mobile-menu__toggler {
         display: none;
     }
+}
+
+.cbailylaw__call-to-action{
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* End of hader style */
@@ -769,11 +776,13 @@ Description: changed the SPAN to P tag added the class name for styling
 .cbailylaw__footer-logo a {
     color: #1C2E6E;
 }
+
 .cbailylaw__footer-menu {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .cbailylaw__footer-menu ul {
     display: flex;
     align-items: center;
@@ -790,11 +799,13 @@ Description: changed the SPAN to P tag added the class name for styling
 .cbailylaw__footer-menu ul li:not(:last-child) {
     margin-right: 50px;
 }
-.cbailylaw__footer-solial_links{
+
+.cbailylaw__footer-solial_links {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
+
 .cbailylaw__footer-solial_links ul {
     display: flex;
     align-items: center;
