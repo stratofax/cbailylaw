@@ -40,6 +40,10 @@
         font-size: 50px;
         line-height: 65px;
     }
+
+    .cbailylaw__hero-img img {
+        bottom: -30%;
+    }
 }
 
 @media screen and (max-width:1220px) {
@@ -98,20 +102,16 @@
 @media screen and (max-width:1176px) {
     .cbailylaw__hero-content h1 {
         font-size: 48px;
-        line-height: 50px;
+        line-height: 58px;
     }
 
     .cbailylaw__hero-img img {
         margin-bottom: 0;
+        bottom: -32%;
     }
 
     .cbailylaw__hero-content {
         padding-right: 50px;
-    }
-
-    .cbailylaw__hero-content,
-    .cbailylaw__hero-img {
-        width: 50%;
     }
 }
 
@@ -169,13 +169,24 @@
         font-size: 15px;
     }
 
+    .cbailylaw__hero-img img {
+        bottom: -26%;
+    }
+
 }
 
 @media screen and (max-width:1023px) {
 
-    .cbailylaw__hero-inner {
-        padding-top: 120px;
+.cbailylaw__hero-inner {
+        grid-template-columns: 100%;
+        padding-top: 150px;
         padding-bottom: 50px;
+    }
+
+    .cbailylaw__hero-img img {
+        height: 390px;
+        position: unset;
+        margin-bottom: -100px !important;
     }
 
     .cbailylaw__hero-content,
@@ -197,10 +208,6 @@
         text-align: center;
     }
 
-    .cbailylaw__hero-img img {
-        height: 470px;
-        margin-bottom: -50px;
-    }
 
     .cbailylaw__hero-img__bg-shape {
         height: 440px;
@@ -309,6 +316,7 @@
         font-size: 24px;
         margin-bottom: 30px;
     }
+
 
 
 }
