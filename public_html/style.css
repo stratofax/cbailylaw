@@ -317,14 +317,12 @@ img {
 
 .cbailylaw__service--card_wrapper {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: auto auto auto auto;
     gap: 30px;
 }
 
 .cbailylaw__service--card {
     position: relative;
-    min-height: 380px;
-    padding: 0 15px;
 }
 
 .cbailylaw__service--card:not(:first-child)::before {
@@ -353,7 +351,7 @@ img {
 .cbailylaw__service--card h3 {
     font-size: var(--h4);
     font-family: var(--body-text);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-weight: 600;
 }
 

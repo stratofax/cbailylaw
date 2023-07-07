@@ -119,7 +119,7 @@
     }
 
     .cbailylaw__service--inner {
-        padding: 50px 30px 100px;
+        padding: 50px 30px;
     }
 
     .cbailylaw__service--card_wrapper {
@@ -449,6 +449,10 @@
         margin-bottom: 15px;
     }
 
+    .cbailylaw__testimonial {
+        overflow: hidden;
+    }
+
 
 }
 
@@ -460,6 +464,11 @@
     /* about */
     .cbailylaw__about-img img {
         height: 450px;
+    }
+
+    .cbailylaw__testimonial::before {
+        width: 100%;
+        height: 100%;
     }
 }
 
