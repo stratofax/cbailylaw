@@ -111,6 +111,11 @@ img {
     box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
 }
 
+.cbailylaw__call-to-action .cbailylaw__call-to-action_btn {
+    height: 48px;
+    line-height: 48px;
+}
+
 
 /* Common style css */
 
@@ -121,6 +126,50 @@ img {
     top: 0;
     left: 0;
     z-index: 999;
+    transition: all 0.4s ease;
+}
+
+.sticky__header {
+    position: fixed !important;
+    width: 100% !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.07);
+    animation: stickyHead 0.4s;
+    background: var(--color-primary);
+    border-bottom: 1px solid var(--color-line);
+}
+
+.sticky__header .cbailylaw_header_inner {
+    border-bottom: none;
+    height: unset;
+    padding: 15px 0;
+}
+
+.sticky__header .cbailylaw_header_inner .cbailylaw__call-to-action_btn {
+    height: 40px;
+    line-height: 40px;
+}
+
+.sticky__header .cbailylaw__logo a {
+    font-size: 28px;
+}
+
+.sticky__header .cbailylaw__menu {
+    width: 68%;
+}
+
+@keyframes stickyHead {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .cbailylaw_header_inner {
@@ -145,10 +194,14 @@ img {
 }
 
 /* Navigation */
+.cbailylaw__menu {
+    width: 60%;
+}
+
 .cbailylaw__menu ul {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .cbailylaw__menu ul li:not(:last-child) {
@@ -204,19 +257,19 @@ img {
 }
 
 .cbailylaw__hero-inner {
-    min-height: 900px;
-    max-width: 1200px;
+    min-height: 800px;
+    max-width: 1300px;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 53% 47%;
+    grid-template-rows: auto;
+    align-content: center;
 }
 
 .cbailylaw__hero-content {
-    width: 55%;
-    padding-right: 100px;
+    padding-right: 30px;
+    height: 100%;
+    padding-top: 80px;
 }
 
 .cbailylaw__hero-content h1 {
@@ -241,16 +294,16 @@ img {
 }
 
 .cbailylaw__hero-img {
-    width: 45%;
     position: relative;
     z-index: 1;
 }
 
 .cbailylaw__hero-img img {
-    height: 648px;
-    display: table;
-    margin: auto;
-    margin-bottom: -150px;
+    height: 600px;
+    object-fit: contain;
+    width: 100%;
+    position: absolute;
+    bottom: -15%;
 }
 
 .cbailylaw__hero-img__bg-shape,
@@ -262,11 +315,18 @@ img {
     left: 50%;
 }
 
+@media screen and (min-width:1440px) {
+    .cbailylaw__hero-img__bg-shape {
+        height: 680px;
+        width: 680px;
+    }
+}
+
 .cbailylaw__hero-img__bg-shape {
-    height: 680px;
-    width: 680px;
+    height: 580px;
+    width: 580px;
     background: #2e8a95;
-    transform: translate(-50%, -38%);
+    transform: translate(-50%, -35%);
     z-index: -1;
 }
 
@@ -335,7 +395,8 @@ img {
 }
 
 .cbailylaw__service--card img {
-    mix-blend-mode: screen;
+    mix-blend-mode: multiply;
+    filter: contrast(1);
     margin-bottom: 30px;
     height: 100px;
     width: 100px;
@@ -510,6 +571,7 @@ img {
     grid-template-columns: 50% 50%;
     gap: 50px;
 }
+
 .cbailylaw__testimonial-grid p {
     font: 300 20px/34px var(--font-body);
     color: var(--color-black);
@@ -540,10 +602,12 @@ Description: changed the SPAN to P tag added the class name for styling
 .cbailylaw__testimonial-grid .testimonial__author a {
     color: var(--color-primary);
 }
-.cbailylaw__testimonial-grid.cbailylaw__testimonial-grid__bottom .testimonial__author{
+
+.cbailylaw__testimonial-grid.cbailylaw__testimonial-grid__bottom .testimonial__author {
     border-color: var(--color-primary) !important;
 }
-.cbailylaw__testimonial-grid.cbailylaw__testimonial-grid__bottom .testimonial__author a{
+
+.cbailylaw__testimonial-grid.cbailylaw__testimonial-grid__bottom .testimonial__author a {
     border: none;
 }
 
