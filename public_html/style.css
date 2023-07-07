@@ -458,8 +458,23 @@ img {
 
 
 /* Start Testimonial style */
+
+.cbailylaw__testimonial {
+    position: relative;
+    z-index: 1;
+}
+
+.cbailylaw__testimonial::before {
+    position: absolute;
+    content: url(assets/imgs/t-bg.png);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
 .cbailylaw__testimonial-inner {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     padding: 100px 0;
 }
@@ -479,7 +494,7 @@ img {
     color: var(--color-black-gray);
 }
 
-.cbailylaw__testimonial-wrapper {
+.cbailylaw__testimonial-wrapper:not(:last-child) {
     margin-bottom: 50px;
     padding-bottom: 50px;
     border-bottom: 1px solid #D9D9D9;
@@ -494,17 +509,13 @@ img {
 
 .cbailylaw__testimonial-grids {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     gap: 50px;
 }
-
-.cbailylaw__testimonial-grid-full p,
 .cbailylaw__testimonial-grid p {
     font: 300 20px/34px var(--font-body);
     color: var(--color-black);
-    min-height: 170px;
     letter-spacing: 0.8px;
-    /* text-transform: capitalize; */
 }
 
 .cbailylaw__testimonial-grid.attribution {
@@ -512,36 +523,36 @@ img {
 }
 
 /* this style is a problem! Don't use span here*/
-.cbailylaw__testimonial-grid-full a,
-.cbailylaw__testimonial-grid span {
+/* 
+Author: Ratul
+Description: changed the SPAN to P tag added the class name for styling
+*/
+.cbailylaw__testimonial-grid .testimonial__author a,
+.cbailylaw__testimonial-grid .testimonial__author {
     display: inline-block;
     color: var(--color-black);
-    font: 600 20px/30px var(--font-body);
+    font: 600 18px/1 var(--font-body);
     line-height: normal;
     letter-spacing: 0.8px;
-    text-decoration-line: underline;
+    border-bottom: 1px solid var(--color-black-gray);
     text-transform: capitalize;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
-.cbailylaw__testimonial-grid-full a {
+.cbailylaw__testimonial-grid .testimonial__author a {
+    color: var(--color-primary);
+}
+.cbailylaw__testimonial-grid.cbailylaw__testimonial-grid__bottom .testimonial__author{
+    border-color: var(--color-primary) !important;
+}
+.cbailylaw__testimonial-grid.cbailylaw__testimonial-grid__bottom .testimonial__author a{
+    border: none;
+}
+
+/* .cbailylaw__testimonial-grid-full a {
     margin: 0;
     display: initial;
-}
-
-.cbailylaw__testimonial {
-    position: relative;
-    z-index: 1;
-}
-
-.cbailylaw__testimonial::before {
-    position: absolute;
-    content: url(assets/imgs/t-bg.png);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -35.5%);
-    z-index: -1;
-}
+} */
 
 /* End of testimonial style */
 
@@ -748,9 +759,17 @@ img {
     font-size: 24px;
 }
 
+@media screen and (min-width:992px) {
+    .footer__info {
+        max-width: 100%;
+        width: 80%;
+        margin: auto;
+    }
+}
+
 .footer__info {
-    line-height: 22px;
-    margin-bottom: 15px;
+    line-height: 28px;
+    margin-bottom: 10px;
 }
 
 /* End of footer style */
