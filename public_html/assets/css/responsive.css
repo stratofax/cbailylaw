@@ -200,6 +200,18 @@
         height: 440px;
         width: 440px;
     }
+
+    .cbailylaw__footer-top {
+        grid-template-columns: 35% 45% 20%;
+    }
+
+
+}
+
+@media screen and (max-width:1120px) {
+    .cbailylaw__footer-logo a {
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width:991px) {
@@ -376,7 +388,7 @@
 
     .cbailylaw__footer-logo,
     .cbailylaw__footer-menu ul {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
     .cbailylaw__footer-solial_links ul,
@@ -451,6 +463,14 @@
 
     .cbailylaw__testimonial {
         overflow: hidden;
+    }
+
+    .cbailylaw__footer-solial_links {
+        justify-content: center;
+    }
+
+    .cbailylaw__footer-top {
+        padding: 30px 0;
     }
 
 
