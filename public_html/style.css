@@ -111,6 +111,11 @@ img {
     box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
 }
 
+.cbailylaw__call-to-action .cbailylaw__call-to-action_btn {
+    height: 48px;
+    line-height: 48px;
+}
+
 
 /* Common style css */
 
@@ -121,21 +126,68 @@ img {
     top: 0;
     left: 0;
     z-index: 999;
+    transition: all 0.4s ease;
 }
 
+.sticky__header {
+    position: fixed !important;
+    width: 100% !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.07);
+    animation: stickyHead 0.4s;
+    background: var(--color-primary);
+    border-bottom: 1px solid var(--color-line);
+}
+
+.sticky__header .cbailylaw_header_inner {
+    border-bottom: none;
+    height: unset;
+    padding: 15px 0 !important;
+}
+
+.sticky__header .cbailylaw_header_inner .cbailylaw__call-to-action_btn {
+    height: 40px;
+    line-height: 40px;
+}
+
+.sticky__header .cbailylaw__logo a {
+    font-size: 28px;
+}
+
+
+@keyframes stickyHead {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 .cbailylaw_header_inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
     max-width: 1300px;
     margin: auto;
+    display: grid;
+    grid-template-columns: 30% 55% 15%;
+    align-content: center;
     padding: 25px 0;
     height: 100px;
     border-bottom: 1px solid var(--color-line);
 }
 
 /* Logo */
+.cbailylaw__menu,
+.cbailylaw__logo {
+    display: flex;
+    align-items: center;
+}
+
 .cbailylaw__footer-logo a,
 .cbailylaw__logo a {
     font-family: var(--font-title);
@@ -145,10 +197,15 @@ img {
 }
 
 /* Navigation */
+
+.cbailylaw__menu {
+    justify-content: flex-end;
+}
+
 .cbailylaw__menu ul {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .cbailylaw__menu ul li:not(:last-child) {
@@ -194,6 +251,11 @@ img {
     }
 }
 
+.cbailylaw__call-to-action {
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* End of hader style */
 
 
@@ -204,19 +266,19 @@ img {
 }
 
 .cbailylaw__hero-inner {
-    min-height: 900px;
-    max-width: 1200px;
+    min-height: 800px;
+    max-width: 1300px;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 53% 47%;
+    grid-template-rows: auto;
+    align-content: center;
 }
 
 .cbailylaw__hero-content {
-    width: 55%;
-    padding-right: 100px;
+    padding-right: 30px;
+    height: 100%;
+    padding-top: 80px;
 }
 
 .cbailylaw__hero-content h1 {
@@ -241,16 +303,22 @@ img {
 }
 
 .cbailylaw__hero-img {
-    width: 45%;
     position: relative;
     z-index: 1;
 }
 
+
 .cbailylaw__hero-img img {
-    height: 648px;
-    display: table;
-    margin: auto;
-    margin-bottom: -150px;
+    height: 600px;
+    object-fit: contain;
+    width: 100%;
+    position: absolute;
+    bottom: -20%;
+}
+@media screen and (min-width:1367px) {
+    .cbailylaw__hero-img img {
+        bottom: -19%;
+    }
 }
 
 .cbailylaw__hero-img__bg-shape,
@@ -262,11 +330,18 @@ img {
     left: 50%;
 }
 
+@media screen and (min-width:1440px) {
+    .cbailylaw__hero-img__bg-shape {
+        height: 680px;
+        width: 680px;
+    }
+}
+
 .cbailylaw__hero-img__bg-shape {
-    height: 680px;
-    width: 680px;
+    height: 580px;
+    width: 580px;
     background: #2e8a95;
-    transform: translate(-50%, -38%);
+    transform: translate(-50%, -35%);
     z-index: -1;
 }
 
@@ -296,7 +371,7 @@ img {
 .cbailylaw__service--inner {
     max-width: 1300px;
     margin: auto;
-    padding: 100px 0 200px;
+    padding: 100px 0 154px;
 }
 
 .cbailylaw__service--title__wrapper {
@@ -317,14 +392,12 @@ img {
 
 .cbailylaw__service--card_wrapper {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: auto auto auto auto;
     gap: 30px;
 }
 
 .cbailylaw__service--card {
     position: relative;
-    min-height: 380px;
-    padding: 0 15px;
 }
 
 .cbailylaw__service--card:not(:first-child)::before {
@@ -337,7 +410,8 @@ img {
 }
 
 .cbailylaw__service--card img {
-    mix-blend-mode: screen;
+    mix-blend-mode: multiply;
+    filter: contrast(1);
     margin-bottom: 30px;
     height: 100px;
     width: 100px;
@@ -353,7 +427,7 @@ img {
 .cbailylaw__service--card h3 {
     font-size: var(--h4);
     font-family: var(--body-text);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-weight: 600;
 }
 
@@ -395,12 +469,14 @@ img {
     z-index: 1;
 }
 
+
 .cbailylaw__about::before {
     position: absolute;
     content: '';
-    width: 50%;
+    width: 52.5%;
     height: 100%;
-    background: var(--color-secondary);
+    /* background: #d5dfe5;  */
+    background: #1D2F6F;
     top: 0;
     left: 0;
     z-index: -1;
@@ -420,15 +496,15 @@ img {
 
 .cbailylaw__about-img img {
     width: 100%;
-    margin-top: -100px;
+    margin-top: -69px;
     position: relative;
     bottom: -15px;
     height: 785px;
-    left: -30px;
+    object-fit: cover;
 }
 
 .cbailylaw__about-content {
-    padding: 50px;
+    padding: 50px 0 50px 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -448,6 +524,10 @@ img {
     font-size: 20px;
 }
 
+.cbailylaw__about-content p:not(:last-child) {
+    margin-bottom: 15px;
+}
+
 .cbailylaw__about-content a {
     display: inline-block;
     width: 64px;
@@ -458,8 +538,23 @@ img {
 
 
 /* Start Testimonial style */
+
+.cbailylaw__testimonial {
+    position: relative;
+    z-index: 1;
+}
+
+.cbailylaw__testimonial::before {
+    position: absolute;
+    content: url(assets/imgs/t-bg.png);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
 .cbailylaw__testimonial-inner {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     padding: 100px 0;
 }
@@ -479,7 +574,7 @@ img {
     color: var(--color-black-gray);
 }
 
-.cbailylaw__testimonial-wrapper {
+.cbailylaw__testimonial-wrapper:not(:last-child) {
     margin-bottom: 50px;
     padding-bottom: 50px;
     border-bottom: 1px solid #D9D9D9;
@@ -498,50 +593,43 @@ img {
     gap: 50px;
 }
 
-.cbailylaw__testimonial-grid-full p,
 .cbailylaw__testimonial-grid p {
     font: 300 20px/34px var(--font-body);
     color: var(--color-black);
-    min-height: 170px;
     letter-spacing: 0.8px;
-    /* text-transform: capitalize; */
+}
+
+.cbailylaw__testimonial-grid p em {
+    font-size: 20px;
 }
 
 .cbailylaw__testimonial-grid.attribution {
     text-align: right;
 }
 
-/* this style is a problem! Don't use span here*/
-.cbailylaw__testimonial-grid-full a,
-.cbailylaw__testimonial-grid span {
+.cbailylaw__testimonial-grid .testimonial__author a,
+.cbailylaw__testimonial-grid .testimonial__author {
     display: inline-block;
     color: var(--color-black);
-    font: 600 20px/30px var(--font-body);
+    font: 600 18px/1 var(--font-body);
     line-height: normal;
     letter-spacing: 0.8px;
-    text-decoration-line: underline;
     text-transform: capitalize;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
-.cbailylaw__testimonial-grid-full a {
-    margin: 0;
-    display: initial;
+.cbailylaw__testimonial-grid .testimonial__author a {
+    color: var(--color-primary);
 }
 
-.cbailylaw__testimonial {
-    position: relative;
-    z-index: 1;
+.cbailylaw__testimonial-grid.cbailylaw__testimonial-grid__bottom .testimonial__author {
+    border-bottom: 1px solid var(--color-primary) !important;
 }
 
-.cbailylaw__testimonial::before {
-    position: absolute;
-    content: url(assets/imgs/t-bg.png);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -35.5%);
-    z-index: -1;
+.cbailylaw__testimonial-grid.cbailylaw__testimonial-grid__bottom .testimonial__author a {
+    border: none;
 }
+
 
 /* End of testimonial style */
 
@@ -686,16 +774,21 @@ img {
 }
 
 .cbailylaw__footer-top {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 25% 55% 20%;
+    align-content: center;
     padding: 50px 0;
     border-bottom: 1px solid #D9D9D9;
 }
 
 .cbailylaw__footer-logo a {
     color: #1C2E6E;
+}
+
+.cbailylaw__footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cbailylaw__footer-menu ul {
@@ -705,6 +798,7 @@ img {
 
 .cbailylaw__footer-menu ul li a {
     color: var(--color-black-gray);
+    line-height: 30px;
 }
 
 .cbailylaw__footer-menu ul li:hover a {
@@ -712,7 +806,13 @@ img {
 }
 
 .cbailylaw__footer-menu ul li:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
+}
+
+.cbailylaw__footer-solial_links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .cbailylaw__footer-solial_links ul {
@@ -724,13 +824,22 @@ img {
     margin-right: 30px;
 }
 
+
 .cbailylaw__footer-solial_links ul li a {
-    font-size: 24px;
-    color: #908f92;
+    font-size: 22px;
+    color: var(--color-white);
+    height: 33px;
+    width: 33px;
+    background: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.12);
 }
 
-.cbailylaw__footer-solial_links ul li:hover a {
-    color: var(--color-primary);
+.cbailylaw__footer-solial_links ul li a:hover {
+    color: var(--color-secondary);
 }
 
 .cbailylaw__footer-bottom {
@@ -748,9 +857,17 @@ img {
     font-size: 24px;
 }
 
+@media screen and (min-width:992px) {
+    .footer__info {
+        max-width: 100%;
+        width: 80%;
+        margin: auto;
+    }
+}
+
 .footer__info {
-    line-height: 22px;
-    margin-bottom: 15px;
+    line-height: 28px;
+    margin-bottom: 10px;
 }
 
 /* End of footer style */
