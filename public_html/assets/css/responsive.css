@@ -1,20 +1,12 @@
 @media screen and (max-width:1366px) {
 
-    /* .cbailylaw__hero-inner, */
-    /* .cbailylaw__contact-inner,
-    .cbailylaw__footer-inner {
-        padding: 0 50px;
-    } */
+
 
     /* services */
     .cbailylaw__service--inner {
-        padding: 50px 0 101px;
+        padding: 50px 50px 101px;
     }
 
-    /* about */
-    .cbailylaw__about-img img {
-        left: -14px;
-    }
 
     /* testimonial */
     .cbailylaw__testimonial-inner {
@@ -26,6 +18,28 @@
         padding-right: 50px;
     }
 
+
+}
+
+@media screen and (max-width:1330px) {
+
+    .cbailylaw__about-inner,
+    .cbailylaw_header_inner,
+    .cbailylaw__hero-inner,
+    .cbailylaw__contact-inner,
+    .cbailylaw__footer-inner {
+        padding: 0 50px;
+    }
+
+    .sticky__header .cbailylaw_header_inner {
+        padding: 15px 50px !important;
+
+    }
+
+    .cbailylaw__about-img img {
+        bottom: -14px;
+        height: 820px;
+    }
 
 }
 
@@ -49,6 +63,15 @@
     .cbailylaw__hero-img__bg-shape {
         height: 550px;
         width: 550px;
+    }
+
+    .cbailylaw__hero-inner {
+        min-height: 700px;
+    }
+
+    .cbailylaw__about-img img {
+        bottom: -14px;
+        height: 854px;
     }
 }
 
@@ -88,7 +111,7 @@
     }
 
     .cbailylaw__about-img img {
-        bottom: -22px;
+        bottom: 0;
     }
 }
 
@@ -122,7 +145,8 @@
     .cbailylaw__footer-inner {
         padding: 0 30px;
     }
-    .sticky__header > .cbailylaw_header_inner{
+
+    .sticky__header>.cbailylaw_header_inner {
         padding-left: 30px !important;
         padding-right: 30px !important;
     }
@@ -144,6 +168,21 @@
         display: none;
     }
 
+    .cbailylaw__hero-content h1 {
+        font-size: 38px;
+        line-height: 52px;
+    }
+
+    h2 {
+        font-size: 34px !important;
+        line-height: 46px;
+    }
+
+    .cbailylaw__hero-content p {
+        line-height: 28px;
+        font-size: 16px;
+    }
+
     /* about */
     .cbailylaw__about-img img {
         bottom: 0;
@@ -152,8 +191,8 @@
     }
 
     .cbailylaw__about-content p {
-        font-size: 16px;
-        line-height: 28px;
+        font-size: 14px;
+        line-height: 24px;
     }
 
     /* testimonial */
@@ -173,14 +212,14 @@
     }
 
     .cbailylaw__hero-img img {
-        bottom: -26%;
+        bottom: -28%;
     }
 
 }
 
 @media screen and (max-width:1023px) {
 
-.cbailylaw__hero-inner {
+    .cbailylaw__hero-inner {
         grid-template-columns: 100%;
         padding-top: 150px;
         padding-bottom: 50px;
