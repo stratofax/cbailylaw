@@ -197,9 +197,10 @@ img {
 
 /* Navigation */
 
-.cbailylaw__menu{
+.cbailylaw__menu {
     justify-content: flex-end;
 }
+
 .cbailylaw__menu ul {
     display: flex;
     align-items: center;
@@ -249,7 +250,7 @@ img {
     }
 }
 
-.cbailylaw__call-to-action{
+.cbailylaw__call-to-action {
     display: flex;
     justify-content: flex-end;
 }
@@ -790,6 +791,7 @@ Description: changed the SPAN to P tag added the class name for styling
 
 .cbailylaw__footer-menu ul li a {
     color: var(--color-black-gray);
+    line-height: 30px;
 }
 
 .cbailylaw__footer-menu ul li:hover a {
@@ -797,7 +799,7 @@ Description: changed the SPAN to P tag added the class name for styling
 }
 
 .cbailylaw__footer-menu ul li:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 .cbailylaw__footer-solial_links {
@@ -815,13 +817,22 @@ Description: changed the SPAN to P tag added the class name for styling
     margin-right: 30px;
 }
 
+
 .cbailylaw__footer-solial_links ul li a {
-    font-size: 24px;
-    color: var(--color-line);
+    font-size: 22px;
+    color: var(--color-white);
+    height: 33px;
+    width: 33px;
+    background: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.12);
 }
 
-.cbailylaw__footer-solial_links ul li:hover a {
-    color: var(--color-primary);
+.cbailylaw__footer-solial_links ul li a:hover {
+    color: var(--color-secondary);
 }
 
 .cbailylaw__footer-bottom {
