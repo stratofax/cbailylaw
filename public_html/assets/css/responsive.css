@@ -10,7 +10,7 @@
 
     /* testimonial */
     .cbailylaw__testimonial-inner {
-        padding: 50px;
+        padding: 50px 0;
     }
 
     /* contact */
@@ -29,6 +29,11 @@
     .cbailylaw__contact-inner,
     .cbailylaw__footer-inner {
         padding: 0 50px;
+    }
+
+    .cbailylaw__testimonial-inner {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .sticky__header .cbailylaw_header_inner {
@@ -146,6 +151,7 @@
         padding: 0 30px;
     }
 
+    .cbailylaw__testimonial-inner,
     .sticky__header>.cbailylaw_header_inner {
         padding-left: 30px !important;
         padding-right: 30px !important;
@@ -205,10 +211,15 @@
         line-height: 27px;
     }
 
+    .cbailylaw__testimonial-grid p em,
     .cbailylaw__testimonial-grid p,
     .cbailylaw__testimonial-grid .testimonial__author a,
     .cbailylaw__testimonial-grid .testimonial__author {
         font-size: 15px;
+    }
+
+    .cbailylaw__about::before {
+        width: 55%;
     }
 
     .cbailylaw__hero-img img {
@@ -351,7 +362,7 @@
 
     /* testimonial */
     .cbailylaw__testimonial-grids {
-        gap: 15px;
+        gap: 25px;
     }
 
     .cbailylaw__testimonial-wrapper h3 {
@@ -395,7 +406,12 @@
     }
 
     h2 {
-        font-size: 38px !important;
+        font-size: 32px !important;
+    }
+
+    .cbailylaw__testimonial-wrapper h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
     }
 
     .cbailylaw__contact-info h2 {
@@ -537,6 +553,10 @@
         grid-template-columns: 40% 60%;
     }
 
+    h2 {
+        font-size: 28px !important;
+    }
+
 
 }
 
@@ -662,6 +682,8 @@
         font-size: 15px;
         line-height: 25px;
     }
+
+
 }
 
 @media screen and (max-width:426px) {
@@ -677,6 +699,10 @@
 
     h2 {
         font-size: 24px !important;
+    }
+
+    .cbailylaw__testimonial-wrapper h3 {
+        font-size: 18px;
     }
 }
 

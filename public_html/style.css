@@ -469,20 +469,18 @@ img {
     z-index: 1;
 }
 
-/* 
-removing the yellow background and
-the blue color not looking good
- */
-/* .cbailylaw__about::before {
+
+.cbailylaw__about::before {
     position: absolute;
     content: '';
-    width: 50%;
+    width: 52.5%;
     height: 100%;
-    background: #d5dfe5;
+    /* background: #d5dfe5;  */
+    background: #1D2F6F;
     top: 0;
     left: 0;
     z-index: -1;
-} */
+}
 
 .cbailylaw__about-inner {
     max-width: 1300px;
@@ -506,7 +504,7 @@ the blue color not looking good
 }
 
 .cbailylaw__about-content {
-    padding: 50px;
+    padding: 50px 0 50px 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -591,7 +589,7 @@ the blue color not looking good
 
 .cbailylaw__testimonial-grids {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto;
     gap: 50px;
 }
 
@@ -609,11 +607,6 @@ the blue color not looking good
     text-align: right;
 }
 
-/* this style is a problem! Don't use span here*/
-/* 
-Author: Ratul
-Description: changed the SPAN to P tag added the class name for styling
-*/
 .cbailylaw__testimonial-grid .testimonial__author a,
 .cbailylaw__testimonial-grid .testimonial__author {
     display: inline-block;
@@ -621,7 +614,6 @@ Description: changed the SPAN to P tag added the class name for styling
     font: 600 18px/1 var(--font-body);
     line-height: normal;
     letter-spacing: 0.8px;
-    border-bottom: 1px solid var(--color-black-gray);
     text-transform: capitalize;
     margin-top: 10px;
 }
@@ -631,17 +623,13 @@ Description: changed the SPAN to P tag added the class name for styling
 }
 
 .cbailylaw__testimonial-grid.cbailylaw__testimonial-grid__bottom .testimonial__author {
-    border-color: var(--color-primary) !important;
+    border-bottom: 1px solid var(--color-primary) !important;
 }
 
 .cbailylaw__testimonial-grid.cbailylaw__testimonial-grid__bottom .testimonial__author a {
     border: none;
 }
 
-/* .cbailylaw__testimonial-grid-full a {
-    margin: 0;
-    display: initial;
-} */
 
 /* End of testimonial style */
 
