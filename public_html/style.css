@@ -144,7 +144,7 @@ img {
 .sticky__header .cbailylaw_header_inner {
     border-bottom: none;
     height: unset;
-    padding: 15px 50px;
+    padding: 15px 0 !important;
 }
 
 .sticky__header .cbailylaw_header_inner .cbailylaw__call-to-action_btn {
@@ -168,6 +168,7 @@ img {
         transform: translateY(0);
     }
 }
+
 
 .cbailylaw_header_inner {
     max-width: 1300px;
@@ -306,12 +307,18 @@ img {
     z-index: 1;
 }
 
+
 .cbailylaw__hero-img img {
     height: 600px;
     object-fit: contain;
     width: 100%;
     position: absolute;
-    bottom: -15%;
+    bottom: -20%;
+}
+@media screen and (min-width:1367px) {
+    .cbailylaw__hero-img img {
+        bottom: -19%;
+    }
 }
 
 .cbailylaw__hero-img__bg-shape,
@@ -364,7 +371,7 @@ img {
 .cbailylaw__service--inner {
     max-width: 1300px;
     margin: auto;
-    padding: 100px 0 200px;
+    padding: 100px 0 154px;
 }
 
 .cbailylaw__service--title__wrapper {
@@ -462,16 +469,20 @@ img {
     z-index: 1;
 }
 
-.cbailylaw__about::before {
+/* 
+removing the yellow background and
+the blue color not looking good
+ */
+/* .cbailylaw__about::before {
     position: absolute;
     content: '';
     width: 50%;
     height: 100%;
-    background: var(--color-secondary);
+    background: #d5dfe5;
     top: 0;
     left: 0;
     z-index: -1;
-}
+} */
 
 .cbailylaw__about-inner {
     max-width: 1300px;
@@ -487,11 +498,11 @@ img {
 
 .cbailylaw__about-img img {
     width: 100%;
-    margin-top: -100px;
+    margin-top: -69px;
     position: relative;
     bottom: -15px;
     height: 785px;
-    left: -30px;
+    object-fit: cover;
 }
 
 .cbailylaw__about-content {
@@ -513,6 +524,10 @@ img {
     font-family: var(--font-body);
     line-height: 34px;
     font-size: 20px;
+}
+
+.cbailylaw__about-content p:not(:last-child) {
+    margin-bottom: 15px;
 }
 
 .cbailylaw__about-content a {
@@ -584,6 +599,10 @@ img {
     font: 300 20px/34px var(--font-body);
     color: var(--color-black);
     letter-spacing: 0.8px;
+}
+
+.cbailylaw__testimonial-grid p em {
+    font-size: 20px;
 }
 
 .cbailylaw__testimonial-grid.attribution {

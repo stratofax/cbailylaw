@@ -1,15 +1,14 @@
 @media screen and (max-width:1366px) {
 
-    .cbailylaw_header_inner,
-    .cbailylaw__hero-inner,
-    .cbailylaw__contact-inner,
+    /* .cbailylaw__hero-inner, */
+    /* .cbailylaw__contact-inner,
     .cbailylaw__footer-inner {
         padding: 0 50px;
-    }
+    } */
 
     /* services */
     .cbailylaw__service--inner {
-        padding: 50px 50px 150px;
+        padding: 50px 0 101px;
     }
 
     /* about */
@@ -122,6 +121,10 @@
     .cbailylaw__contact-inner,
     .cbailylaw__footer-inner {
         padding: 0 30px;
+    }
+    .sticky__header > .cbailylaw_header_inner{
+        padding-left: 30px !important;
+        padding-right: 30px !important;
     }
 
     .cbailylaw__service--inner {
