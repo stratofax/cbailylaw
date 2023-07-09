@@ -315,6 +315,7 @@ img {
     position: absolute;
     bottom: -20%;
 }
+
 @media screen and (min-width:1367px) {
     .cbailylaw__hero-img img {
         bottom: -19%;
@@ -532,6 +533,50 @@ img {
     display: inline-block;
     width: 64px;
     margin-top: 30px;
+}
+
+/* about bottom row */
+.about__info--row {
+    background: var(--color-primary);
+}
+
+.about__info--row__inner {
+    max-width: 1300px;
+    margin: auto;
+    padding: 60px 0 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    margin-top: -10px;
+}
+
+.about__info--col h3 {
+    font-size: var(--h3);
+    color: var(--color-white);
+    margin-bottom: 30px;
+    font-family: var(--font-title);
+}
+
+.about__info--col ul li {
+    font: 400 16px/1.5 var(--font-body);
+    color: var(--color-white);
+    position: relative;
+    padding-left: 35px;
+}
+
+.about__info--col ul li::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: var(--color-secondary);
+    top: 6px;
+    left: 0;
+    border-radius: 3px;
+}
+
+.about__info--col ul li:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 /* End of about style */
