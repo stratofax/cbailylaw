@@ -1,16 +1,16 @@
 $(document).ready(function () {
     // "use strict";
 
-    $(".cbailylaw__see-more").on('click', function (e) {
+    $(".see-more").on('click', function (e) {
         e.preventDefault();
         $(this).prev("span").slideDown();
         $(this).hide();
     })
 
     // Mobile menu toggler
-    $toggler = $('.cbailylaw__mobile-menu__toggler');
+    $toggler = $('.mobile-menu__toggler');
     $toggler.on('click', function () {
-        $('nav.cbailylaw__menu').toggle();
+        $('nav.menu').toggle();
     });
 
     // Sticky Header
@@ -20,7 +20,7 @@ $(document).ready(function () {
 
     $win.bind('scroll', function () {
         if ($win.width() >= 992) {
-            var $navbar = $('#cbailylaw_header');
+            var $navbar = $('#header');
             if ($win.scrollTop() > num) {
                 $navbar.addClass('sticky__header');
             } else {
