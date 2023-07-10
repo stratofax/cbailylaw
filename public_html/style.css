@@ -466,22 +466,8 @@ img {
 /* About style */
 .cbailylaw__about {
     background: var(--color-primary);
-    position: relative;
-    z-index: 1;
 }
 
-
-.cbailylaw__about::before {
-    position: absolute;
-    content: '';
-    width: 52.5%;
-    height: 100%;
-    /* background: #d5dfe5;  */
-    background: #1D2F6F;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
 
 .cbailylaw__about-inner {
     max-width: 1300px;
@@ -591,11 +577,12 @@ img {
 
 .cbailylaw__testimonial::before {
     position: absolute;
-    content: url(assets/imgs/t-bg.png);
+    content: url(assets/imgs/t-bg2.png);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
+    filter: opacity(20%);
 }
 
 .cbailylaw__testimonial-inner {
@@ -896,6 +883,16 @@ img {
     font-size: var(--body-text);
     font-family: var(--font-btn);
     color: var(--color-black-gray);
+}
+
+.footer__credit {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer__credit a {
+    color: var(--color-primary);
+    text-transform: capitalize;
 }
 
 .cbailylaw__footer-bottom p span {
