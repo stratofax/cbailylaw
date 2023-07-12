@@ -930,3 +930,43 @@ img {
 }
 
 /* End of footer style */
+
+
+
+/* START 404 ERROR */
+.error__404 {
+    background: var(--color-primary);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 0 100px;
+}
+.error__404--inner{
+    max-width: 650px;
+    text-align: center;
+    background: #ffffff14;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.01);
+}
+.error__404--inner h1{
+    font: 700 150px/1 var(--font-title);
+    color: var(--color-white);
+    margin-bottom: 15px;
+}
+.error__404--inner h2{
+    font: 500 var(--h3)/1 var(--font-title);    
+    color: var(--color-white);
+    margin-bottom: 15px;
+}
+.error__404--inner p{
+    font: 400 var(--body-text)/1.7 var(--font-body);
+    color: var(--color-white);
+    margin-bottom: 50px;
+}
+.error__404--inner .call-to-action_btn{
+    min-width: 200px;
+}
+
+/* END OF 404 ERROR */

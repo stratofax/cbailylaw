@@ -1,7 +1,5 @@
 @media screen and (max-width:1366px) {
 
-
-
     /* services */
     .service--inner {
         padding: 50px 50px 101px;
@@ -17,7 +15,6 @@
     .contact-info p {
         padding-right: 50px;
     }
-
 
 }
 
@@ -42,12 +39,20 @@
 
     .sticky__header .header_inner {
         padding: 15px 50px !important;
-
     }
 
     .about-img img {
         bottom: -14px;
         height: 820px;
+    }
+
+    /* error page */
+    .error__404 {
+        padding: 180px 0 90px;
+    }
+
+    .error__404--inner h1 {
+        font-size: 130px;
     }
 
 }
@@ -143,6 +148,19 @@
 
     .hero-content {
         padding-right: 50px;
+    }
+}
+
+@media screen and (max-width:1120px) {
+
+    .logo a,
+    .footer-logo a {
+        font-size: 28px;
+    }
+
+    /* error page */
+    .error__404 {
+        padding: 160px 0 70px;
     }
 }
 
@@ -282,13 +300,6 @@
 
 }
 
-@media screen and (max-width:1120px) {
-
-    .logo a,
-    .footer-logo a {
-        font-size: 28px;
-    }
-}
 
 @media screen and (max-width:991px) {
     .header_inner {
@@ -382,8 +393,30 @@
         font-size: 28px;
     }
 
+    .footer-logo a,
+    .site__logo a {
+        font-size: 32px;
+    }
+
+    /* error page */
+    .error__404 {
+        padding: 130px 0 50px;
+    }
+
+    .error__404--inner h1 {
+        font-size: 100px;
+    }
 
 
+
+}
+
+@media screen and (max-width:910px) {
+
+    .footer-logo a,
+    .site__logo a {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width:880px) {
@@ -583,6 +616,20 @@
 
 }
 
+@media screen and (max-width:767px) {
+
+    .footer-logo a,
+    .site__logo a {
+        font-size: 26px;
+    }
+
+    /* error page */
+    .error__404--inner {
+        max-width: 600px;
+        padding: 50px 30px;
+    }
+}
+
 @media screen and (max-width:673px) {
     .hero-content h1 {
         padding: 0 50px;
@@ -596,6 +643,11 @@
     .testimonial::before {
         width: 100%;
         height: 100%;
+    }
+
+    /* error page */
+    .error__404--inner {
+        max-width: 550px;
     }
 }
 
@@ -642,8 +694,8 @@
     }
 
     .footer-logo a,
-    .logo a {
-        font-size: 28px;
+    .site__logo a {
+        font-size: 22px;
     }
 
     .footer-menu ul li:not(:last-child) {
@@ -662,6 +714,26 @@
     .header_inner {
         height: 60px;
     }
+
+    /* error page */
+        .error__404 {
+            padding: 110px 0 50px;
+        }
+    .error__404--inner {
+        max-width: 85%;
+    }
+
+    .error__404--inner h1 {
+        font-size: 70px;
+    }
+
+    .error__404--inner h2 {
+        font-size: 26px !important;
+    }
+
+    .error__404--inner p {
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (max-width:562px) {
@@ -676,6 +748,21 @@
     .about__info--col ul li {
         font-size: 14px;
         padding-left: 30px;
+    }
+
+    /* error page */
+        .error__404 {
+            padding: 90px 0 30px;
+        }
+    .error__404--inner {
+        max-width: 90%;
+        padding: 30px 15px;
+    }
+
+    .error__404--inner .call-to-action_btn {
+        min-width: 170px;
+        height: 45px;
+        line-height: 45px;
     }
 }
 
@@ -722,6 +809,11 @@
 @media screen and (max-width:426px) {
     .logo a {
         font-size: 22px;
+    }
+
+    .footer-logo a,
+    .site__logo a {
+        font-size: 20px;
     }
 }
 
