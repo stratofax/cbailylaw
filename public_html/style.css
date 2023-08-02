@@ -13,7 +13,6 @@
 
     /* color */
     --color-primary: #177e89;
-    /* --color-primary: #177D89; */
     --color-secondary: #F2CA2A;
     --color-black: #000000;
     --color-black-1e: #1e1906;
@@ -956,7 +955,7 @@ img {
     margin-bottom: 15px;
 }
 .error__404--inner h2{
-    font: 500 var(--h3)/1 var(--font-title);    
+    font: 500 var(--h3)/1 var(--font-title);
     color: var(--color-white);
     margin-bottom: 15px;
 }
